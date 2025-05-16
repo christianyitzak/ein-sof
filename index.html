@@ -11,8 +11,12 @@
     </head>
 
     <body class="font-rubik">
-        <div class="bg-[url(/img/hero-cover.png)] bg-no-repeat w-full h-screen bg-cover bg-center flex flex-col">
-            <nav class="flex items-center justify-between max-w-7xl mx-auto text-white w-full p-5">
+        <div class="relative w-full h-screen flex flex-col">
+            <!-- Background image -->
+            <img src="/src/img/hero-cover.png" alt="Hero background" class="absolute inset-0 w-full h-full object-cover -z-10">
+
+            <!-- Overlay content -->
+            <nav class="flex items-center justify-between max-w-7xl mx-auto text-white w-full p-5 z-10">
                 <img src="src/img/einsof-logo.png" alt="Einsof logo">
                 
                 <ul class="flex gap-20">
@@ -28,14 +32,17 @@
                 </div>
             </nav>
 
-            <section class="text-white text-center max-w-7xl mx-auto flex-1 flex flex-col items-center justify-center p-5">
+            <section class="text-white text-center max-w-7xl mx-auto flex-1 flex flex-col items-center justify-center p-5 z-10">
                 <h1 class="text-6xl mb-5">
                     DWDM & OTN EQUIPMENT <br>
                     GROW YOUR NETWORK WITH US
                 </h1>
 
                 <p class="leading-relaxed mb-10">
-                    EIN-SOF’s carrier-grade DWDM and OTN equipment offers the flexibility to build a cost effective, highly efficient optical transport <br> network for a variety of industries such as carriers, finance, enterprises, broadcast companies, utilities, government <br> organizations, education networks, as well as content service providers. EIN-SOF products are tailored to meet your fiber optic <br> network challenges, and are simple to install, deploy and manage, using EIN-SOF’s NMS for the whole deployment lifecycle.
+                    EIN-SOF’s carrier-grade DWDM and OTN equipment offers the flexibility to build a cost effective, highly efficient optical transport <br>
+                    network for a variety of industries such as carriers, finance, enterprises, broadcast companies, utilities, government <br>
+                    organizations, education networks, as well as content service providers. EIN-SOF products are tailored to meet your fiber optic <br>
+                    network challenges, and are simple to install, deploy and manage, using EIN-SOF’s NMS for the whole deployment lifecycle.
                 </p>
 
                 <a href="#" class="text-[#434E62] bg-[#68D1EA] rounded-full p-3 px-6 font-medium">Contact Us</a>
